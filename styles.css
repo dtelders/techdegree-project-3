@@ -1,0 +1,143 @@
+/* overall layout */
+body {
+    font-family: "Merriweather", serif;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    color: #87959f;
+}
+
+/* header */
+header {
+    background: #2d3945;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+}
+
+/*greeting below header*/
+.welcome {
+    text-align: center;
+    margin: 2em 0 3em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #2d3945;
+    margin-bottom: 0.5em;
+}
+
+/* contact information form */
+h2 {
+    color: #2d3945;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.contact label {
+    display: block;
+    margin: 1em 0;
+}
+
+.contact input,
+.contact select {
+    background: #eff0f1;
+    padding: 0.8em 1.2em;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+#zip {
+    width: 50%;
+    max-width: 215px;
+}
+
+#state {
+    color: #87959f;
+}
+
+::placeholder {
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: right;
+    padding-right: 3em;
+    color: #87959f;
+}
+
+input:focus {
+    outline-color: #2d3945;
+}
+
+/* horizontal lines */
+.top {
+    border-top: 4px solid;
+}
+
+hr {
+    border-top: none;
+    border-bottom: 2px solid;
+    border-left: 0;
+    border-right: 0;
+    height: 5px;
+    color: #2d3945;
+    margin: 2em 0;
+}
+
+/* newletter section */
+.newsletter input {
+    margin: 0.8em;
+}
+
+.newsletter-details {
+    display: block;
+    margin-top: 1em;
+}
+
+textarea {
+    background: #eff0f1;
+    border: none;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+/* submit button */
+button {
+    background: #4ebbb5;
+    color: white;
+    padding: 1.3em;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 2em 0;
+    font-size: 1.2em;
+}
+
+/* footer */
+footer {
+    color: #87959f;
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+/* media query */
+
+@media (min-width: 768px) {
+    main {
+        display: block;
+        margin: 0 auto;
+    }
+    .contact-info {
+        display: flex;
+    }
+}
