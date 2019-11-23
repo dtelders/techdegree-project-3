@@ -133,6 +133,7 @@ button {
     width: 100%;
     margin: 2em 0;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 /* footer */
@@ -160,5 +161,8 @@ footer {
     }
     #zip {
         max-width: 30%;
+    }
+    main {
+        max-width: 1024px;
     }
 }
