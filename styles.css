@@ -82,7 +82,10 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
+    outline-style: solid;
+    outline-width: thin;
     outline-color: #2d3945;
     background: lightgray;
     transition: background 0.8s ease;
