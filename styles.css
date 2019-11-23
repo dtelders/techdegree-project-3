@@ -1,6 +1,6 @@
 /* overall layout */
 body {
-    font-family: "Merriweather", serif;
+    font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -34,6 +34,13 @@ legend {
 }
 
 /* contact information form */
+
+.contact {
+    background: #f8f8ff;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
 h2 {
     color: #2d3945;
 }
@@ -49,8 +56,10 @@ fieldset {
 }
 
 .contact input,
-.contact select {
+.contact select,
+textarea {
     background: #eff0f1;
+    transition: background 0.8s ease;
     padding: 0.8em 1.2em;
     border: none;
     box-sizing: border-box;
@@ -58,7 +67,6 @@ fieldset {
 }
 #zip {
     width: 50%;
-    max-width: 215px;
 }
 
 #state {
@@ -73,8 +81,28 @@ fieldset {
     color: #87959f;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline-color: #2d3945;
+    background: lightgray;
+    transition: background 0.8s ease;
+}
+
+/* newletter section */
+.newsletter {
+    background: #f8f8ff;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.newsletter input {
+    margin: 0.8em;
+}
+
+.newsletter-details {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 /* horizontal lines */
@@ -90,23 +118,6 @@ hr {
     height: 5px;
     color: #2d3945;
     margin: 2em 0;
-}
-
-/* newletter section */
-.newsletter input {
-    margin: 0.8em;
-}
-
-.newsletter-details {
-    display: block;
-    margin-top: 1em;
-}
-
-textarea {
-    background: #eff0f1;
-    border: none;
-    width: 100%;
-    margin-top: 1.5em;
 }
 
 /* submit button */
@@ -133,11 +144,18 @@ footer {
 /* media query */
 
 @media (min-width: 768px) {
-    main {
-        display: block;
-        margin: 0 auto;
-    }
-    .contact-info {
+    .flex-pair {
         display: flex;
+    }
+    .flex-pair label {
+        flex-basis: 25%;
+    }
+    .flex-pair input,
+    .flex-pair select {
+        margin-bottom: 1em;
+        flex-basis: 75%;
+    }
+    #zip {
+        max-width: 30%;
     }
 }
