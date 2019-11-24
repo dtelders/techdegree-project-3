@@ -5,6 +5,7 @@ body {
 
 main {
     width: 90%;
+    max-width: 900px;
     margin: auto;
     color: #87959f;
 }
@@ -161,8 +162,5 @@ footer {
     }
     #zip {
         max-width: 30%;
-    }
-    main {
-        max-width: 1024px;
     }
 }
