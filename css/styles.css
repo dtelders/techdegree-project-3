@@ -89,7 +89,7 @@ select:focus {
     outline-width: thin;
     outline-color: #2d3945;
     background: lightgray;
-    transition: background 0.8s ease;
+    /* transition: background 0.8s ease; */
 }
 
 /* newletter section */
